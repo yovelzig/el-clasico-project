@@ -1,0 +1,15 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '5000:5000'
+    env_file:
+      - .env
+    volumes:
+      - ./database:/app/database
+      - ./uploads:/app/uploads
+      - ./data:/app/data
+    restart: unless-stopped
+    command: gunicorn app:app --bind 0.0.0.0:5000 --workers 2 --timeout 120
