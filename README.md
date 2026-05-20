@@ -2,7 +2,7 @@
 
 ## Prerequisites
 - Python 3.9+
-- Anthropic API key (get one at https://console.anthropic.com)
+- Gemini API key (get one at https://aistudio.google.com)
 
 ## Installation
 
@@ -13,21 +13,21 @@ pip install -r requirements.txt
 
 ## Environment Variables
 
-Set your Anthropic API key before running:
+Set your Gemini API key before running:
 
 **Linux/Mac:**
 ```bash
-export ANTHROPIC_API_KEY="your_anthropic_api_key"
+export Gemini_API_KEY="your_gemini_api_key"
 ```
 
 **Windows (PowerShell):**
 ```powershell
-$env:ANTHROPIC_API_KEY="your_anthropic_api_key"
+$env:Gemini_API_KEY="your_gemini_api_key"
 ```
 
 **Windows (Command Prompt):**
 ```cmd
-set ANTHROPIC_API_KEY=your_anthropic_api_key
+set Gemini_API_KEY="your_gemini_api_key"
 ```
 
 ## Run
